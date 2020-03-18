@@ -1,0 +1,82 @@
+ERROR:root:HTTP Error 403: Forbidden
+Traceback (most recent call last):
+  File "/mnt/f/New folder (2)/webscrap/wscrap.py", line 22, in retrive_webpage
+    html = urlopen(self.__url)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "/mnt/f/New folder (2)/webscrap/wscrap.py", line 46, in write_webpage_as_html
+    fobj.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
+ERROR:root:a bytes-like object is required, not 'builtin_function_or_method'
+Traceback (most recent call last):
+  File "/mnt/f/New folder (2)/webscrap/wscrap.py", line 44, in write_webpage_as_html
+    fobj.write(data)
+TypeError: a bytes-like object is required, not 'builtin_function_or_method'
+ERROR:root:HTTP Error 403: Forbidden
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\johukum\webscrap\wscrap.py", line 22, in retrive_webpage
+    html = urlopen(self.__url)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python36\Lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python36\Lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python36\Lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python36\Lib\urllib\request.py", line 570, in error
+    return self._call_chain(*args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python36\Lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python36\Lib\urllib\request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\johukum\webscrap\wscrap.py", line 46, in write_webpage_as_html
+    fobj.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
+ERROR:root:a bytes-like object is required, not 'builtin_function_or_method'
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\johukum\webscrap\wscrap.py", line 44, in write_webpage_as_html
+    fobj.write(data)
+TypeError: a bytes-like object is required, not 'builtin_function_or_method'
+ERROR:root:'charmap' codec can't decode byte 0x8d in position 1323: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\johukum\webscrap\wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "C:\Users\Admin\.virtualenvs\johukum-OvwLA8CT\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 1323: character maps to <undefined>
+ERROR:root:'charmap' codec can't decode byte 0x8d in position 1323: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\johukum\webscrap\wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "C:\Users\Admin\.virtualenvs\johukum-OvwLA8CT\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 1323: character maps to <undefined>
+ERROR:root:'charmap' codec can't decode byte 0x8d in position 1323: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\johukum\webscrap\wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "C:\Users\Admin\.virtualenvs\johukum-OvwLA8CT\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 1323: character maps to <undefined>
+ERROR:root:'charmap' codec can't decode byte 0x8d in position 1323: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\johukum\webscrap\wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "C:\Users\Admin\.virtualenvs\johukum-OvwLA8CT\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 1323: character maps to <undefined>

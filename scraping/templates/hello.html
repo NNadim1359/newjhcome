@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<title>Jo-Hukum</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	
+	
+
+	
+	<div class="size1 bg0 where1-parent">
+		<!-- Coutdown -->
+		<div class="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2" style="background-image: url({% static 'images/hatirjheel_at_night.jpg' %});">
+<!--
+			<div class="wsize2 flex-w flex-c-m cd100 js-tilt">
+				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
+					<span class="l2-txt1 p-b-9 days">35</span>
+					<span class="s2-txt4">Days</span>
+				</div>
+
+				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
+					<span class="l2-txt1 p-b-9 hours">17</span>
+					<span class="s2-txt4">Hours</span>
+				</div>
+
+				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
+					<span class="l2-txt1 p-b-9 minutes">50</span>
+					<span class="s2-txt4">Minutes</span>
+				</div>
+
+				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
+					<span class="l2-txt1 p-b-9 seconds">39</span>
+					<span class="s2-txt4">Seconds</span>
+				</div>
+			</div>
+-->
+		</div>
+		
+		<!-- Form -->
+		<div class="size3 flex-col-sb flex-w p-l-75 p-r-75 p-t-45 p-b-45 respon1">
+			<div class="wrap-pic1">
+<!--				<img src="images/icons/logo.png" alt="LOGO">-->
+                <h2 style="color: #15c641"><b class="text-info">Jo</b>-Hukum</h2>
+			</div>
+
+			<div class="p-t-50 p-b-60">
+				<p class="m1-txt1 p-b-36">
+					Our website is <span class="m1-txt2">Coming Soon</span>, follow us to stay updated!
+				</p>
+
+
+				<p class="s2-txt3 p-t-18">
+					And don’t worry, we hate spam too! You can unsubcribe at anytime.
+				</p>
+			</div>
+
+			<div class="flex-w">
+				<a href="https://www.facebook.com/johukumbd/" class="flex-c-m size5 bg3 how1 trans-04 m-r-5">
+					<i class="fa fa-facebook"></i>
+				</a>
+
+				<a href="https://www.twitter.com/johokumbd/" class="flex-c-m size5 bg4 how1 trans-04 m-r-5">
+					<i class="fa fa-twitter"></i>
+				</a>
+
+				<a href="https://www.youtube.com/johukumbd/" class="flex-c-m size5 bg5 how1 trans-04 m-r-5">
+					<i class="fa fa-youtube-play"></i>
+				</a>
+			</div>
+		</div>
+    </div>
+	<br />
+
+	<a href="{% url 'prothomalo' %}"><button type="button" class="btn btn-success"> 	<img style="width: 100px; display: block;" src="//paloimages.prothom-alo.com/contents/themes/public/style/images/Prothom-Alo.png" alt="প্রথম আলো"></button></a>
+	<a href="{% url 'kalerkantho' %}"><button type="button" class="btn btn-success">	<img style="width: 100px; display: block;" src="https://www.kalerkantho.com/assets/site/img/logo.png" alt="kalerkantho"></button></a>
+	
+    {% for item in data %}
+
+
+    <div class="card">
+		
+        <div class="card-header">
+			{% if news_paper == 'kalerkantho' %}
+			<img style="width: 100px; display: block;" src="https://www.kalerkantho.com/assets/site/img/logo.png" alt="kalerkantho">
+			{% else %}
+			<img style="width: 100px; display: block;" src="//paloimages.prothom-alo.com/contents/themes/public/style/images/Prothom-Alo.png" alt="প্রথম আলো">
+
+			{% endif %}
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <h4>{{item.title}}</h4>
+            <footer class="blockquote-footer"><a href="{{ item.link }}"><cite title="Source Title">For more</cite></a></footer>
+          </blockquote>
+        </div>
+      </div> 
+      <br />
+    
+    {% endfor %}
+    
+  
+
+
+	
+
+<!--===============================================================================================-->	
+	<script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/countdowntime/moment.min.js' %}"></script>
+	<script src="{% static 'vendor/countdowntime/moment-timezone.min.js' %}"></script>
+	<script src="{% static 'vendor/countdowntime/moment-timezone-with-data.min.js' %}"></script>
+	<script src="{% static 'vendor/countdowntime/countdowntime.js' %}"></script>
+	<script>
+		$('.cd100').countdown100({
+			/*Set Endtime here*/
+			/*Endtime must be > current time*/
+			endtimeYear: 0,
+			endtimeMonth: 0,
+			endtimeDate: 35,
+			endtimeHours: 18,
+			endtimeMinutes: 0,
+			endtimeSeconds: 0,
+			timeZone: "" 
+			// ex:  timeZone: "America/New_York"
+			//go to " http://momentjs.com/timezone/ " to get timezone
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/tilt/tilt.jquery.min.js' %}"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>

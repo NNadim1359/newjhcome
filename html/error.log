@@ -1,0 +1,914 @@
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/views.py changed, reloading.
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/views.py changed, reloading.
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 20, in hello
+    x=news_scrap.parse_soup_to_simple_html()
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 80, in parse_soup_to_simple_html
+    news_lists += {tirle:link}
+NameError: name 'tirle' is not defined
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 23, in hello
+    return render(request, 'hello.html', context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 811, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 482, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 543, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 9: 'for'. Looking for one of: empty, endfor.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 23, in hello
+    return render(request, 'hello.html', context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'item.link' not found. 'item.link' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 23, in hello
+    return render(request, 'hello.html', context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'item.link' not found. 'item.link' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 23, in hello
+    return render(request, 'hello.html', context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'item.link' not found. 'item.link' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 23, in hello
+    return render(request, 'hello.html', context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 903, in render_annotated
+    return self.render(context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 677, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'item.link' not found. 'item.link' is not a valid view function or pattern name.
+WARNING:django.request:Not Found: /section/international
+WARNING:django.request:Not Found: /section/opinion
+WARNING:django.request:Not Found: /section/sports
+WARNING:django.request:Not Found: /section/feature
+WARNING:django.request:Not Found: /favicon.ico
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: 'str(item.link)'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 23, in hello
+    return render(request, 'hello.html', context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 811, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 951, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 884, in __init__
+    super().__init__(*args, **kwargs)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 887, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 562, in compile_filter
+    return FilterExpression(token, self)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 662, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(item.link)' from 'str(item.link)'
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: 'str({{item.link}})'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 23, in hello
+    return render(request, 'hello.html', context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 811, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 951, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 884, in __init__
+    super().__init__(*args, **kwargs)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 887, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 562, in compile_filter
+    return FilterExpression(token, self)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 662, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '({{item.link}})' from 'str({{item.link}})'
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: "{{item.link}}.find('dailysangram.inf')"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 23, in hello
+    return render(request, 'hello.html', context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 811, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 951, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 884, in __init__
+    super().__init__(*args, **kwargs)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 887, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 562, in compile_filter
+    return FilterExpression(token, self)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 662, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{item.link}}.find('dailysangram.inf')' from '{{item.link}}.find('dailysangram.inf')'
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: "{{item.link}}.find('dailysangram')"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 23, in hello
+    return render(request, 'hello.html', context)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 811, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 951, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 884, in __init__
+    super().__init__(*args, **kwargs)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 887, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 562, in compile_filter
+    return FilterExpression(token, self)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/template/base.py", line 662, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{item.link}}.find('dailysangram')' from '{{item.link}}.find('dailysangram')'
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/johukum/settings.py changed, reloading.
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+ERROR:root:HTTP Error 403: Forbidden
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 22, in retrive_webpage
+    html = urlopen(self.__url)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 46, in write_webpage_as_html
+    fobj.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode byte 0x87 in position 10386: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x87 in position 10386: invalid start byte
+WARNING:django.request:Not Found: /js/main.js
+ERROR:root:'utf-8' codec can't decode byte 0x87 in position 10386: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x87 in position 10386: invalid start byte
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode byte 0xa6 in position 9334: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa6 in position 9334: invalid start byte
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode byte 0xa6 in position 9334: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa6 in position 9334: invalid start byte
+WARNING:django.request:Not Found: /js/main.js
+ERROR:root:'utf-8' codec can't decode byte 0xa6 in position 9334: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa6 in position 9334: invalid start byte
+WARNING:django.request:Not Found: /js/main.js
+ERROR:root:'utf-8' codec can't decode byte 0xa6 in position 9334: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa6 in position 9334: invalid start byte
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode byte 0xa6 in position 9334: invalid start byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa6 in position 9334: invalid start byte
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:HTTP Error 403: Forbidden
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 22, in retrive_webpage
+    html = urlopen(self.__url)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 46, in write_webpage_as_html
+    fobj.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
+WARNING:django.request:Not Found: /js/main.js
+ERROR:root:HTTP Error 403: Forbidden
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 22, in retrive_webpage
+    html = urlopen(self.__url)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 46, in write_webpage_as_html
+    fobj.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:HTTP Error 403: Forbidden
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 22, in retrive_webpage
+    html = urlopen(self.__url)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 46, in write_webpage_as_html
+    fobj.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:HTTP Error 403: Forbidden
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 22, in retrive_webpage
+    html = urlopen(self.__url)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 46, in write_webpage_as_html
+    fobj.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 10735-10736: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 10735-10736: invalid continuation byte
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 25, in hello
+    data=news_scrap.parse_soup_to_simple_html()
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 83, in parse_soup_to_simple_html
+    news_links += "<li><a href='{}'target='_blank'>{}</li>\n".format(link, title)
+NameError: name 'title' is not defined
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 10735-10736: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 10735-10736: invalid continuation byte
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 10735-10736: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 10735-10736: invalid continuation byte
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 25, in hello
+    data=news_scrap.parse_soup_to_simple_html()
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 77, in parse_soup_to_simple_html
+    if tag.children.get('href'):
+AttributeError: 'list_iterator' object has no attribute 'get'
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode byte 0xe0 in position 11416: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe0 in position 11416: invalid continuation byte
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 25, in hello
+    data=news_scrap.parse_soup_to_simple_html()
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 77, in parse_soup_to_simple_html
+    if tag.children.get('href'):
+AttributeError: 'list_iterator' object has no attribute 'get'
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 9542-9543: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9542-9543: invalid continuation byte
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 25, in hello
+    data=news_scrap.parse_soup_to_simple_html()
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 77, in parse_soup_to_simple_html
+    if tag.children.get('href'):
+AttributeError: 'list_iterator' object has no attribute 'get'
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 9659-9660: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9659-9660: invalid continuation byte
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 9659-9660: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9659-9660: invalid continuation byte
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 9659-9660: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9659-9660: invalid continuation byte
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 9659-9660: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9659-9660: invalid continuation byte
+WARNING:django.request:Not Found: /js/main.js
+ERROR:root:'utf-8' codec can't decode bytes in position 9659-9660: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9659-9660: invalid continuation byte
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 9659-9660: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9659-9660: invalid continuation byte
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 9725-9726: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9725-9726: invalid continuation byte
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 9725-9726: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9725-9726: invalid continuation byte
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 9725-9726: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 34, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9725-9726: invalid continuation byte
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 9720-9721: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 35, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9720-9721: invalid continuation byte
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 25, in hello
+    data=news_scrap.parse_soup_to_simple_html()
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 81, in parse_soup_to_simple_html
+    title = tit.string
+AttributeError: 'NoneType' object has no attribute 'string'
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 9394-9395: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 35, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9394-9395: invalid continuation byte
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+ERROR:root:'utf-8' codec can't decode bytes in position 9394-9395: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 35, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9394-9395: invalid continuation byte
+WARNING:django.request:Not Found: /js/main.js
+WARNING:django.request:Not Found: /js/main.js
+ERROR:root:'utf-8' codec can't decode bytes in position 9519-9520: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 35, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9519-9520: invalid continuation byte
+WARNING:django.request:Not Found: /js/main.js
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 9519-9520: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 35, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9519-9520: invalid continuation byte
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 25, in hello
+    data=news_scrap.parse_soup_to_simple_html()
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 80, in parse_soup_to_simple_html
+    if tag.get('href'):
+AttributeError: 'NoneType' object has no attribute 'get'
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:/mnt/f/jh/johukum/scraping/webscrap/wscrap.py changed, reloading.
+ERROR:root:'utf-8' codec can't decode bytes in position 9519-9520: invalid continuation byte
+Traceback (most recent call last):
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 35, in read_webpage_from_html
+    self.__data = fobj.read()
+  File "/usr/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 9519-9520: invalid continuation byte
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/mnt/f/jh/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/f/jh/johukum/scraping/views.py", line 25, in hello
+    data=news_scrap.parse_soup_to_simple_html()
+  File "/mnt/f/jh/johukum/scraping/webscrap/wscrap.py", line 80, in parse_soup_to_simple_html
+    if tag.get('href'):
+AttributeError: 'NoneType' object has no attribute 'get'
